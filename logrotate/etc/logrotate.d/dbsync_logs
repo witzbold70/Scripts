@@ -1,0 +1,10 @@
+#### DBSync Apply and Extract logs
+/u01/DBSync/DBSync.linux.x86_64/apply_odbc.log /u01/DBSync/DBSync.linux.x86_64/apply_odbc_mssql.log /u01/DBSync/DBSync.linux.x86_64/extract.log /u01/DBSync/DBSync.linux.x86_64/extract_mssql.log {
+    size 5M
+    copytruncate
+    dateext
+    compress
+    notifempty
+    rotate 30
+    olddir /u01/DBSync/DBSync.linux.x86_64/logs/backup
+}

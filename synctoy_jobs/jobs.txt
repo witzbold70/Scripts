@@ -1,0 +1,8 @@
+sync_sqlyog_owncloud
+sync_mremoteng_owncloud
+sync_dropbox_owncloud_1
+sync_dropbox_owncloud_2
+sync_google_owncloud
+sync_owncloud_google
+sync_owncloud_onedrive
+sync_owncloud_icloud
