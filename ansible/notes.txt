@@ -1,0 +1,21 @@
+Ansible YAML
+
+Playbooks
+
+---
+- name: install and start apache
+  hosts: web_servers
+  remote_user: ansible
+  sudo: true
+  sudo_user: root
+
+  tasks:
+  - name: install httpd
+    yum: name=httpd state=present
+
+  - name: start httpd
+    service: name=httpd state=running
+
+
+Variables
+    Represented as "{{ var_name }}"

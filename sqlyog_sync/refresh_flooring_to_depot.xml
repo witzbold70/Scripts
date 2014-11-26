@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job version="11.1">
+<syncjob>
+<fkcheck check="no" />
+<passwords isencoded="yes" />
+<source>
+<host>10.119.1.164</host>
+<user>djones6</user>
+<pwd>KLI3s7q0N5g=</pwd>
+<port>3306</port>
+<compressed>1</compressed>
+<ssl>0</ssl>
+<sslauth>0</sslauth>
+<clientkey></clientkey>
+<clientcert></clientcert>
+<cacert></cacert>
+<cipher></cipher>
+<charset></charset>
+<database>flooring_dwh</database>
+</source>
+<target>
+<host>10.1.20.113</host>
+<user>djones6</user>
+<pwd>KLI3s7q0N5g=</pwd>
+<port>3306</port>
+<compressed>1</compressed>
+<ssl>0</ssl>
+<sslauth>0</sslauth>
+<clientkey></clientkey>
+<clientcert></clientcert>
+<cacert></cacert>
+<cipher></cipher>
+<charset></charset>
+<database>flooring_dwh</database>
+</target>
+<tables all="yes" />
+<sync_action type="all" >
+<file>C:\Users\djones6\Files\Scripts\sqlyog_sync\refresh_flooring_to_depot.sql</file>
+</sync_action><abortonerror abort="no" />
+<sendreport send="yes" when="always"><smtp>
+<displayname>Flooring Refresh</displayname>
+<toemail>djones6@westlakefinancial.com</toemail>
+<fromemail>sqlyog@westlakefinancial.com</fromemail>
+<replyemail>sqlyog@westlakefinancial.com</replyemail>
+<host>mail.nowcom.com</host>
+<encryption>no</encryption>
+<port>25</port>
+<subject>refresh_flooring_to_depot</subject>
+</smtp>
+</sendreport></syncjob>
+</job>
